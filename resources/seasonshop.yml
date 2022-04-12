@@ -1,0 +1,20 @@
+version: 1
+
+0:
+ name: "x16 Wheat"
+ id: 296
+ meta: 0
+ amount: 16
+ price: 3
+1:
+ name: "x16 Carrot"
+ id: 391
+ meta: 0
+ amount: 16
+ price: 4
+2:
+ name: "x16 Potato"
+ id: 392
+ meta: 0
+ amount: 16
+ price: 5

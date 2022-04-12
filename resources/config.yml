@@ -1,0 +1,22 @@
+version: 1
+
+#Change the time zone according to where you are
+#If you do not know the time zone where you are, please visit the link : https://www.php.net/manual/en/timezones.php
+date_default_timezone_set: "Asia/Ho_Chi_Minh"
+Now-Season: "Now Season : {Season}"
+Sell-MSG: "Sell Successfully And You Got It {PRICE}"
+Last-Season: "At the end of the season, the shop does not buy agricultural products"
+No-Item-Sell: "You don't have enough items to sell"
+
+
+#UI
+UI:
+ Title: "Season Shop"
+ Content: "Price has been changed\n Now is the season {SEASON}"
+ 
+ 
+#The price of the season will be multiplied by the number of items , price in seasonshop.yml
+Price-Spring: 1
+Price-Summer: 2
+Price-Autumn: 2.2
+Price-Winter: 0.5
