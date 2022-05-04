@@ -8,7 +8,7 @@ use pocketmine\plugin\PluginBase;
 use pocketmine\event\Listener;
 use pocketmine\command\{Command, CommandSender};
 use pocketmine\item\{Item, ItemFactory, VanillaItems};
-use BeeAZZ\SeasonShop\libs\YTBJero\LibEconomy\Economy;
+use BeeAZZ\SeasonShop\libs\davidglitch04\libEco\libEco;
 use BeeAZZ\SeasonShop\libs\jojoe77777\FormAPI\SimpleForm;
 use BeeAZZ\SeasonShop\libs\jojoe77777\FormAPI\CustomForm;
 use pocketmine\utils\Config;
@@ -133,7 +133,7 @@ class SeasonShop extends PluginBase implements Listener{
      return true;
     }
      $player->getInventory()->removeItem($item);
-     Economy::addMoney($player, $price);
+     libEco::addMoney($player, $price);
      $player->sendMessage(str_replace("{PRICE}", $price, $this->getConfig()->get("Sell-MSG")));
     });
     for($i = 0; $i <= 100; $i++){
