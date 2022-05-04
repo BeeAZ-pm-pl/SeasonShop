@@ -110,7 +110,7 @@ class SeasonShop extends PluginBase implements Listener{
       return true;
      }
      if($player->hasPermission("seasonshop.command")){
-     if($this->getSeason() !== "Spring" && $this->getSeason() !== "Summer" && $this->getSeason() !== "Autumn" && $this->getSeason() !== "Winter"){
+     if($this->getSeason() == "Last Spring" or $this->getSeason() == "Last Summer" or $this->getSeason() == "Last Autumn" or $this->getSeason() == "Last Winter"){
      $player->sendMessage($this->getConfig()->get("Last-Season"));
      return true;
   }
