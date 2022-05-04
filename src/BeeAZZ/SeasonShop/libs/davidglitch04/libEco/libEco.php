@@ -1,7 +1,5 @@
 <?php
 
-declare(strict_types=1);
-
 namespace BeeAZZ\SeasonShop\libs\davidglitch04\libEco;
 
 use Closure;
