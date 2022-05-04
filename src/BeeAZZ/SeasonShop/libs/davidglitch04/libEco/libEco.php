@@ -4,7 +4,7 @@ namespace BeeAZZ\SeasonShop\libs\davidglitch04\libEco;
 
 use Closure;
 use cooldogedev\BedrockEconomy\libs\cooldogedev\libSQL\context\ClosureContext;
-use davidglitch04\libEco\Utils\Utils;
+use BeeAZZ\SeasonShop\libs\davidglitch04\libEco\Utils\Utils;
 use onebone\economyapi\EconomyAPI;
 use pocketmine\player\Player;
 use pocketmine\Server as PMServer;
