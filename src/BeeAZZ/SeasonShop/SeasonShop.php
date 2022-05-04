@@ -81,18 +81,22 @@ class SeasonShop extends PluginBase implements Listener{
   }
     
   public function getSell(){
-   if($this->getSeason() == "Spring"){
-     $price = $this->getConfig()->get("Price-Spring");
-   }
-   if($this->getSeason() == "Summer"){
-     $price = $this->getConfig()->get("Price-Summer");
-   }
-   if($this->getSeason() == "Autumn"){
-     $price = $this->getConfig()->get("Price-Autumn");
-   }
-   if($this->getSeason() == "Winter"){
-     $price = $this->getConfig()->get("Price-Winter");
-   }
+    switch ($this->getSeason()){
+      case "Spring":
+        $price = $this->getConfig()->get("Price-Spring");
+        break;
+      case "Summer";
+          $price = $this->getConfig()->get("Price-Summer");
+        break;
+      case "Autumn":
+          $price = $this->getConfig()->get("Price-Autumn");
+        break;
+      case "Winter":
+          $price = $this->getConfig()->get("Price-Winter");
+        break;
+      default:
+        $price = 0;
+    }
     return $price;
    }
 
