@@ -3,11 +3,12 @@ build-by-default: true
 branches:
 - master
 projects:
-  SeasonShopPM:
+  SeasonShopUI:
     path: ""
     libs:
       - src: David-pm-pl/libEco/libEco
         version: ^3.0.0
         branch: stable
-    lint: false
+      - src: Vecnavium/FormsUI/libFormsUI
+        version: ^2.0.0
 ...
