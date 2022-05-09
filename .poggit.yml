@@ -11,4 +11,5 @@ projects:
         branch: stable
       - src: Vecnavium/FormsUI/libFormsUI
         version: ^2.0.0
+        branch: master
 ...
