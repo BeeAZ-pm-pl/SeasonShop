@@ -10,7 +10,6 @@ use pocketmine\command\{Command, CommandSender};
 use pocketmine\item\{Item, ItemFactory, VanillaItems};
 use davidglitch04\libEco\libEco;
 use Vecnavium\FormsUI\SimpleForm;
-
 use pocketmine\utils\Config;
 use pocketmine\event\player\PlayerJoinEvent;
 
