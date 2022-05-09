@@ -5,6 +5,7 @@ branches:
 projects:
   SeasonShopUI:
     path: ""
+    lint: false
     libs:
       - src: David-pm-pl/libEco/libEco
         version: ^3.0.0
