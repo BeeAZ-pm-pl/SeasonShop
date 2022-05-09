@@ -8,7 +8,7 @@ use pocketmine\plugin\PluginBase;
 use pocketmine\event\Listener;
 use pocketmine\command\{Command, CommandSender};
 use pocketmine\item\{Item, ItemFactory, VanillaItems};
-use BeeAZZ\SeasonShop\libs\davidglitch04\libEco\libEco;
+use davidglitch04\libEco\libEco;
 use BeeAZZ\SeasonShop\libs\jojoe77777\FormAPI\SimpleForm;
 use BeeAZZ\SeasonShop\libs\jojoe77777\FormAPI\CustomForm;
 use pocketmine\utils\Config;
