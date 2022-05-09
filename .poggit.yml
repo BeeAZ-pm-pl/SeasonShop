@@ -9,6 +9,7 @@ projects:
       - src: David-pm-pl/libEco/libEco
         version: ^3.0.0
         branch: stable
+    libs:
       - src: Vecnavium/FormsUI/libFormsUI
         version: ^2.0.0
         branch: master
