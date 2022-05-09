@@ -6,9 +6,8 @@ projects:
   SeasonShopPM:
     path: ""
     libs:
-      libEco:
-        - src: David-pm-pl/libEco/libEco
-          version: ^3.0.0
-          branch: stable
+      - src: David-pm-pl/libEco/libEco
+        version: ^3.0.0
+        branch: stable
     lint: false
 ...
