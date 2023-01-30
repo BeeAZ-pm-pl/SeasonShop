@@ -1,6 +1,6 @@
 name: SeasonShop
 version: 0.0.1
-api: 4.0.0
+api: 5.0.0
 main: BeeAZZ\SeasonShop\SeasonShop
 author: BeeAZZ
 description: Shop Season For Pocketmine-MP
