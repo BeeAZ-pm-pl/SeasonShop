@@ -1,8 +1,8 @@
 name: SeasonShop
-version: 0.0.1
+version: 0.0.2
 api: 5.0.0
 main: BeeAZZ\SeasonShop\SeasonShop
-author: BeeAZZ
+author: BeeAZ
 description: Shop Season For Pocketmine-MP
 softdepend: ["BedrockEconomy", "EconomyAPI"]
 
