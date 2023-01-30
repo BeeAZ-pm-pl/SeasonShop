@@ -7,7 +7,7 @@ use pocketmine\Server;
 use pocketmine\plugin\PluginBase;
 use pocketmine\event\Listener;
 use pocketmine\command\{Command, CommandSender};
-use pocketmine\item\{Item, ItemFactory, VanillaItems};
+use pocketmine\item\{Item, LegacyStringToItemParser, VanillaItems};
 use davidglitch04\libEco\libEco;
 use Vecnavium\FormsUI\SimpleForm;
 use pocketmine\utils\Config;
@@ -129,7 +129,7 @@ class SeasonShop extends PluginBase implements Listener{
     $meta = $this->shop->get(strtolower($data))["meta"];
     $amount = $this->shop->get(strtolower($data))["amount"];
     $prices = $this->shop->get(strtolower($data))["price"];
-    $item = ItemFactory::getInstance()->get($id, $meta, $amount);
+    $item = LegacyStringToItemParser::getInstance()->parse($id.':'.$meta)->setCount($amount);
     $price = $this->getSell() * $amount * $prices;
     if(!$player->getInventory()->contains($item)){
      $player->sendMessage($this->getConfig()->get("No-Item-Sell"));
