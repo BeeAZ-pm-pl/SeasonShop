@@ -80,6 +80,7 @@ class SeasonShop extends PluginBase implements Listener{
   }
     
   public function getSell(){
+    $price = 0;
     switch ($this->getSeason()){
       case "Spring":
         $price = $this->getConfig()->get("Price-Spring");
@@ -94,10 +95,11 @@ class SeasonShop extends PluginBase implements Listener{
           $price = $this->getConfig()->get("Price-Winter");
         break;
       default:
-        $price = 0;
-    }
-    return $price;
-   }
+          $price = 0;
+        break;
+      }
+      return $price;
+     }
 
 
   public function onCommand(CommandSender $sender, Command $cmd, string $label, array $args): bool{
